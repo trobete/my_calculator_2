@@ -10,6 +10,9 @@ function cube() {
 function seno() {                                                                                                                                                                                           
   var num = document.getElementById("n1");                                                                                                                                                                  
   num.value = Math.sin(x);                                                                                                                                                                                  
+function cuadro() {                                                                                                                                                                                         
+  var num = document.getElementById("n1");                                                                                                                                                                  
+  num.value = Math.pow(num.value, 4);                                                                                                                                                                       
 }
 </script>
 </head>
@@ -20,6 +23,7 @@ function seno() {
     <p>
     <button onclick="cube()"> x^3 </button>
     <button onclick="seno()"> sin </button>
+    <button onclick="cuadro()"> x^4 </button>
     </p>
 </body>
 </html>
