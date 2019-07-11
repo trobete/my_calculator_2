@@ -6,6 +6,10 @@ function cuadrado() {
   var num = document.getElementById("n1");                                                                                                                                                                                                                                                  
   num.value = Math.pow(num.value, 2);                                                                                                                                                                                                                                                       
 }
+function inverso() {                                                                                                                                                                                                                                                                        
+  var num = document.getElementByid("n1");                                                                                                                                                                                                                                                  
+  num.value = 1/num.value;                                                                                                                                                                                                                                                                  
+} 
 function cube() {
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 3);
@@ -28,6 +32,7 @@ function cuadro() {
     <button onclick="seno()"> sin </button>
     <button onclick="cuadro()"> x^4 </button>
     <button onclick="cuadrado()"> x^2 </button>
+    <button onclick="inverso()"> 1/x </button>
     </p>
 </body>
 </html>
