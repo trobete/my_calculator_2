@@ -2,7 +2,10 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
-
+function cuadrado() {                                                                                                                                                                                                                                                                       
+  var num = document.getElementById("n1");                                                                                                                                                                                                                                                  
+  num.value = Math.pow(num.value, 2);                                                                                                                                                                                                                                                       
+}
 function cube() {
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 3);
@@ -24,6 +27,7 @@ function cuadro() {
     <button onclick="cube()"> x^3 </button>
     <button onclick="seno()"> sin </button>
     <button onclick="cuadro()"> x^4 </button>
+    <button onclick="cuadrado()"> x^2 </button>
     </p>
 </body>
 </html>
